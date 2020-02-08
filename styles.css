@@ -1,0 +1,48 @@
+.form-header {
+color: blueviolet;
+}
+
+.form-fields {
+    display: flex; 
+}
+
+.form-fields-inner {
+    display: flex; 
+    flex-direction: column;
+}
+
+.radio {
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 12px;
+    cursor: pointer; 
+    user-select: none;
+}
+
+.radio input {
+    left: 0;
+    top: 0;
+    z-index: 2;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    height: 15px;
+    width: 15px;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+.radio input:checked ~ .checkmark {
+    background-color: green;
+}
+
+.hidden {
+    display: none; 
+}
